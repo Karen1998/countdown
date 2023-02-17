@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+    color: aliceblue    ;
+}
+
+.bordered-content {
+    border: 1px solid #000;
+    padding: 8px 12px;
+    border-radius: 4px;
+}

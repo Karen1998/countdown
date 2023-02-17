@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Css
+import './assets/css/reset.css';
+import './assets/css/global.css';
+
+// Jotai provider
+import { Provider } from 'jotai';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
-        <App />
+        <Provider>
+            <ThemeProvider theme={theme}>
+                <App />
+            </ThemeProvider>
+        </Provider>
     </React.StrictMode>,
 );
 
